@@ -1,0 +1,20 @@
+# configuration file for a chatgpt-based Japanese application
+
+blocks:
+  - name: chatgpt
+    block_class: dialbb.builtin_blocks.chatgpt.chatgpt.ChatGPT
+    input:
+      user_id: user_id
+      user_utterance: user_utterance
+      aux_data: aux_data
+    output:
+      system_utterance: system_utterance
+      aux_data: aux_data
+      final: final
+    user_name: ユーザ
+    system_name: システム
+    first_system_utterance: "こんにちは。私の名前は由衣です。少しお話させてください。スイーツって好きですか？"
+    prompt_template: prompt_template_ja.txt
+    gpt_model: gpt-3.5-turbo
+    
+

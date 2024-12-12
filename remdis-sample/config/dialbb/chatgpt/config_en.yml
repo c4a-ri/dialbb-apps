@@ -1,0 +1,20 @@
+# Configuration file for a chatgpt-based English application
+
+blocks:
+  - name: chatgpt
+    block_class: dialbb.builtin_blocks.chatgpt.chatgpt.ChatGPT
+    input:
+      user_id: user_id
+      user_utterance: user_utterance
+      aux_data: aux_data
+    output:
+      system_utterance: system_utterance
+      aux_data: aux_data
+      final: final
+    user_name: User
+    system_name: System
+    first_system_utterance: "Hello! Let's talk about food. What kind of cuisine do you like?"
+    prompt_template: prompt_template_en.txt
+    gpt_model: gpt-3.5-turbo
+    
+
