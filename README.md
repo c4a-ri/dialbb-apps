@@ -10,9 +10,9 @@ For the details of each application, refer to its README.
 
 ### 日本語アプリケーション
 
-- [Remdisサンプル](remdis-sample)): Remdisをフロントエンドに利用したアプリケーション
+- [Remdisサンプル](remdis-sample): Remdisをフロントエンドに利用したアプリケーション
 
-  検証が不十分です．
+  Note: 検証が不十分です．
 
 ## License
 
