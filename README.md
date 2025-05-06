@@ -14,7 +14,7 @@ For the details of each application, refer to its README.
 
   Note: 検証が不十分です．
 
-- [お菓子対話システム](sweets-ja): DialBB-NCを用いて作成した、好きなお菓子やどこでお菓子を買うかなどをてユーザに尋ねるアプリケーション
+- [お菓子対話アプリ](sweets-ja): DialBB-NCを用いて作成した、好きなお菓子やどこでお菓子を買うかなどをてユーザに尋ねるアプリケーション
 
 ## License
 
