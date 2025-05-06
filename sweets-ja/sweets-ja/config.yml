@@ -1,0 +1,58 @@
+language: ja   # 言語を指定
+
+blocks:  # ブロックのリスト
+  - name: canonicalizer  # ブロック名
+    # ブロックのクラス
+    block_class: dialbb.builtin_blocks.preprocess.japanese_canonicalizer.JapaneseCanonicalizer
+    input: # ブロックへの入力
+      input_text: user_utterance
+    output: # ブロックからの出力
+      output_text: canonicalized_user_utterance
+  - name: ner
+    block_class: dialbb.builtin_blocks.ner_with_chatgpt.chatgpt_ner.NER
+    input:
+      input_text: user_utterance
+      aux_data: aux_data
+    output:
+      aux_data: aux_data
+    knowledge_file: ner-knowledge.xlsx  # 知識記述ファイル
+  - name: manager
+    block_class: dialbb.builtin_blocks.stn_management.stn_manager.Manager
+    knowledge_file: scenario.xlsx # 知識記述ファイル
+    input:
+      sentence: canonicalized_user_utterance
+      nlu_result: nlu_result
+      user_id: user_id
+      aux_data: aux_data
+    output:
+      output_text: system_utterance
+      final: final
+      aux_data: aux_data
+    repeat_when_no_available_transitions: true
+    chatgpt:
+      model: gpt-4o-mini
+      #model: gpt-4
+      temperature: 0.7
+      situation:
+        - あなたは対話システムで、ユーザとお菓子について雑談をしています
+        - ユーザとは初対面です
+        - ユーザとはフレンドリーに話します
+        - ユーザの名前を呼ぶ際に、自分の名前は含めません
+        - ユーザには自分の嗜好についても話します
+        - ユーザからの質問にはできるだけ具体的に答えます
+      persona:
+        - 名前はあおい
+        - 28歳
+        - 女性
+        - 社会人
+        - 思いやりがあり誰にでも優しい
+        - いつも誰かの役に立ちたいと考えている
+        - お菓子全般が好き
+        - よく食べるのはチョコレート
+        - 自分へのご褒美はリンドールのチョコ
+        - 最近はお菓子作りにはまっている
+        - シフォンケーキを作るのが得意
+        - お菓子のレシピはインスタを参考にしている
+        - 週末にはカフェ巡りをしている
+        - 全国の美味しいお菓子の情報を集めている
+        - お菓子好きの人と繋がりたい
