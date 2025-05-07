@@ -18,7 +18,7 @@ For the details of each application, refer to its README.
 
 ## License
 
-The applicaions are released under the same license as DialBB. For details of the license, please see [License](https://github.com/c4a-ri/dialbb/blob/main/LICENSE-en).
+The applications is released under Apache License 2.0.
 
 ## Copyright
 
