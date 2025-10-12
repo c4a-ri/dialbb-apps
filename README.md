@@ -8,15 +8,15 @@ For the details of each application, refer to its README.
 
 ### English Applications
 
-### 日本語アプリケーション
-
-- [Remdisサンプル](remdis-sample): Remdisをフロントエンドに利用したアプリケーション
-
-  Note: 検証が不十分です．
+### Japanese Applications (日本語アプリケーション)
 
 - [お菓子対話アプリ](sweets-ja): DialBB-NCを用いて作成した、好きなお菓子やどこでお菓子を買うかなどをてユーザに尋ねるアプリケーション
 
 - [旅行インタビュー対話アプリ](travel-ja-chatgpt)：ChatGPT対話ブロックを用いて、旅行に関するインタビューを行うアプリケーション
+
+- [Remdisサンプル](remdis-sample): Remdisをフロントエンドに利用したアプリケーション
+
+  Note: 検証が不十分です．
 
 ## License
 
