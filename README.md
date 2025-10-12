@@ -16,6 +16,8 @@ For the details of each application, refer to its README.
 
 - [お菓子対話アプリ](sweets-ja): DialBB-NCを用いて作成した、好きなお菓子やどこでお菓子を買うかなどをてユーザに尋ねるアプリケーション
 
+- [旅行インタビュー対話アプリ](travel-ja-chatgpt)：ChatGPT対話ブロックを用いて、旅行に関するインタビューを行うアプリケーション
+
 ## License
 
 The applications is released under Apache License 2.0.
