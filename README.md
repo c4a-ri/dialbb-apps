@@ -1,6 +1,6 @@
 # DialBB Sample Applications
 
-This repository includes sample applications of [DialBB](https://github.com/c4a-ri/dialbb)  a framework for developing dialogue systems. 
+This repository includes sample applications of [DialBB](https://c4a-ri.github.io/dialbb/)  a framework for developing dialogue systems. 
 
 For the details of each application, refer to its README.
 
@@ -10,9 +10,9 @@ For the details of each application, refer to its README.
 
 ### Japanese Applications (日本語アプリケーション)
 
-- [お菓子対話アプリ](sweets-ja): DialBB-NCを用いて作成した、好きなお菓子やどこでお菓子を買うかなどをてユーザに尋ねるアプリケーション
+- [お菓子インタビュー対話アプリケーション](sweets-ja): DialBB-NCを用いて作成した、好きなお菓子やどこでお菓子を買うかなどをてユーザに尋ねるアプリケーション
 
-- [旅行インタビュー対話アプリ](travel-ja-chatgpt)：ChatGPT対話ブロックを用いて、旅行に関するインタビューを行うアプリケーション
+- [旅行インタビュー対話アプリケーション](travel-ja-chatgpt)：ChatGPT対話ブロックを用いて、旅行に関するインタビューを行うアプリケーション
 
 - [Remdisサンプル](remdis-sample): Remdisをフロントエンドに利用したアプリケーション
 
