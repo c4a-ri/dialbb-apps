@@ -1,6 +1,6 @@
 # MMDAgent-EXを利用したサンプルアプリケーション
 
-## 使い方
+## サンプルの使用方法
 
 ### MMDAgent-EXのセットアップ
 
@@ -72,31 +72,32 @@ MMDAgent-EX.exe example\main.mdf
 
 対話ができるようになります。
 
-### 変更の仕方
+`main.mdf`と同じディレクトリの`_log.txt‘`にMMDAgentのログが出力されます。
 
+## アプリケーションの変更方法
 
+### MMDAgentとDialBBの通信
 
+MMDAgentのmdfファイルのPlugin_AnyScript_Commandには以下のように設定します。
 
+```sh
+python -u dialbb_connector.py --motion_table <モーションテーブルファイル> 
+                              [--host <DialBBサーバのホスト>] 
+                              [--port <DialBBサーバのポート番号>]
+```
 
+モーションテーブルファイルには、以下のように、モーションIDと、モーションを定義するvmdファイル（mdfファイルからの相対パスで記述）の対応を書きます。
 
-## （参考）
+```yaml
+うなづく: motions/action/nod.vmd
+会釈する: motions/action/eshaku.vmd
+お辞儀する: motions/action/ojigi.vmd
+考える: motions/action/thinking.vmd
+両手を振る: motions/action/wavehands.vmd
+```
+
+DialBBサーバから送られるシステム発話文字列の末尾に、`(motion:<モーションID>)`という文字列があると、`<モーションID>`を取り出し、`motion_table.yml`を参照してモーションを取り出します。
+
 ### モーションの変更
-motion_table.ymlを編集して[状態]に対する[モーションファイル]を変更する  
-モーションファイルの所在は、exampleフォルダの **motions/**, **gene/motion/**, **uka/motion/**, です
-```
-e.g. "初期状態の時に"：お辞儀をするモーションファイル  を指定する場合、
-  "#initial": motions/action/ojigi.vmd
-```
-
-### ログ出力
-
-* Shift+f キーでスクリーン上に詳細なログを表示切替が可能
-* ファイル出力する場合は：main.mdfに「log_file=log.txt」の1行追加
-
-### MMDAgentの画面制御
-* 矢印キーで回転
-* Shift＋矢印キーで移動
-* \+ キーでズームイン／- キーでズームアウト
-* C キーでマウスの有効／無効切り替え
-* Escで終了
+`motion_table.yml`を編集することで、新しいモーションをつかえるようになります。モーションファイルは、exampleフォルダの `motions/`**, **`gene/motion/`**, **`uka/motion/`にあります。
 

@@ -1,11 +1,5 @@
-"#initial": motions/action/ojigi.vmd
-nod: motions/action/nod.vmd
-ojigi: motions/action/ojigi.vmd
-"名前を言った": gene/motion/03_smile.vmd
-"名前を取れなかった": motions/action/thinking.vmd
-"食べる": motions/action/looking_right.vmd
-"好き": gene/motion/01_happy.vmd
-"知らないラーメンが好き": gene/motion/08_surprise.vmd
-"#final": 
-"#final_apology": motions/action/thinking.vmd
-"default": gene/motion/02_laugh.vmd
+うなづく: motions/action/nod.vmd
+会釈する: motions/action/eshaku.vmd
+お辞儀する: motions/action/ojigi.vmd
+考える: motions/action/thinking.vmd
+両手を振る: motions/action/wavehands.vmd
