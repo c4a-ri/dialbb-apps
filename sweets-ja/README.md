@@ -1,10 +1,15 @@
 # お菓子インタビュー対話アプリケーション
 
-- [ノーコードツール](https://c4a-ri.github.io/dialbb/no-code/index-ja.html)を利用して構築
+
+## 概要
 
 - 好きなお菓子やどこでお菓子を買うかなどをてユーザに尋ねるアプリケーション
 
-  対話例
+- DialBB ver1.1以上が必要
+
+- [ノーコードツール](https://c4a-ri.github.io/dialbb/no-code/index-ja.html)を利用して構築
+
+## 対話例
 
   ```
   システム: こんにちは、私はあおいと言います。お名前を教えていただけますか？
@@ -41,14 +46,18 @@
 	    嬉しいです！ 今日はありがとうございました。
   ```
 
-
-- ファイル構成
+## ファイル構成
 
   - `sweets-ja.zip`: DialBB-NCにそのまま読み込めるファイル
 
   - `sweets-ja`: 上記ファイルを展開してできるディレクトリ。これを編集して新しいアプリケーションを作ることができる。
 
 
+## シミュレーションによるテスト
 
+bashの場合
 
-  
+```sh
+export OPENAI_KEY=<OPENAIのAPIキー>
+dialbb-tester --app_config sweets-ja/config.yml --test_config simulation/simulation_config.yml --output _output.txt
+```

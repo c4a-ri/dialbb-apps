@@ -1,0 +1,10 @@
+user_name: ユーザ
+system_name: システム
+#model: gpt-4o-mini
+model: gpt-4o-2024-11-20
+
+settings:
+  - prompt_template: simulation_prompt.txt
+temperatures:
+  - 0.7
+
