@@ -11,7 +11,7 @@
 
 このREADMEのあるディレクトリで以下を実行してください．
 ```
-dialbb-server config_ja.yml
+dialbb-server config.yml
 ```
 
 ブラウザで`http://localhost:8080`または`http://localhost:8080/test`にアクセスして対話してください．
