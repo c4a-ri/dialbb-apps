@@ -16,7 +16,7 @@ For the details of each application, refer to its README.
 
 - [MMDAgentサンプル](mmdagent-sample): [MMDAgent-EX](https://github.com/mmdagent-ex/MMDAgent-EX)をフロントエンドに利用したアプリケーション
 
-- [Remdisサンプル](remdis-sample): Remdisをフロントエンドに利用したアプリケーション
+- [Remdisサンプル](remdis-sample): [Remdis](https://github.com/remdis/remdis)をフロントエンドに利用したアプリケーション
 
   Note: 検証が不十分です．
 
