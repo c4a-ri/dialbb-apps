@@ -22,7 +22,7 @@ For the details of each application, refer to its README.
 
 ## License
 
-The applications is released under Apache License 2.0.
+The applications are released under Apache License 2.0.
 
 ## Copyright
 
