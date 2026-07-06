@@ -11,6 +11,7 @@
 
 このREADMEのあるディレクトリで以下を実行してください．
 ```
+export OPENAI_API_KEY=<別途取得したOPENAIのAPIキー>
 dialbb-server config.yml
 ```
 

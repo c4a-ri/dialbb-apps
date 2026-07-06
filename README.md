@@ -13,7 +13,18 @@ For the details of each application, refer to its README.
 
 ### English Applications
 
+Currently no English applications in this repository.
+
 ### Japanese Applications (日本語アプリケーション)
+
+#### DialBB ver. 2.x用のアプリケーション
+
+- [旅行インタビュー対話アプリケーション](travel-ja-llm-dialogue)：ChatGPT対話ブロックを用いて，旅行に関するインタビューを行うアプリケーション
+
+- [お菓子インタビュー対話アプリケーション](sweets-ja-dialbb2): DialBB-NCを用いて作成した，好きなお菓子やどこでお菓子を買うかなどをてユーザに尋ねるアプリケーション
+
+
+#### DialBB ver. 1.x用のアプリケーション
 
 - [お菓子インタビュー対話アプリケーション](sweets-ja): DialBB-NCを用いて作成した，好きなお菓子やどこでお菓子を買うかなどをてユーザに尋ねるアプリケーション
 
@@ -27,7 +38,7 @@ For the details of each application, refer to its README.
 
 ## License
 
-The applications is released under Apache License 2.0.
+The applications are released under Apache License 2.0.
 
 ## Copyright
 
